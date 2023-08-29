@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8D94B202A9DE15500D10F42 /* pethealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B1F2A9DE15500D10F42 /* pethealthApp.swift */; };
+		C8D94B222A9DE15500D10F42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B212A9DE15500D10F42 /* ContentView.swift */; };
+		C8D94B242A9DE15A00D10F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D94B232A9DE15A00D10F42 /* Assets.xcassets */; };
+		C8D94B272A9DE15A00D10F42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D94B262A9DE15A00D10F42 /* Preview Assets.xcassets */; };
+		C8D94B312A9DE15A00D10F42 /* pethealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B302A9DE15A00D10F42 /* pethealthTests.swift */; };
+		C8D94B3B2A9DE15A00D10F42 /* pethealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B3A2A9DE15A00D10F42 /* pethealthUITests.swift */; };
+		C8D94B3D2A9DE15A00D10F42 /* pethealthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B3C2A9DE15A00D10F42 /* pethealthUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8D94B2D2A9DE15A00D10F42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8D94B142A9DE15500D10F42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8D94B1B2A9DE15500D10F42;
+			remoteInfo = pethealth;
+		};
+		C8D94B372A9DE15A00D10F42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8D94B142A9DE15500D10F42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8D94B1B2A9DE15500D10F42;
+			remoteInfo = pethealth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C8D94B1C2A9DE15500D10F42 /* pethealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pethealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8D94B1F2A9DE15500D10F42 /* pethealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pethealthApp.swift; sourceTree = "<group>"; };
+		C8D94B212A9DE15500D10F42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C8D94B232A9DE15A00D10F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8D94B262A9DE15A00D10F42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8D94B2C2A9DE15A00D10F42 /* pethealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pethealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8D94B302A9DE15A00D10F42 /* pethealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pethealthTests.swift; sourceTree = "<group>"; };
+		C8D94B362A9DE15A00D10F42 /* pethealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pethealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8D94B3A2A9DE15A00D10F42 /* pethealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pethealthUITests.swift; sourceTree = "<group>"; };
+		C8D94B3C2A9DE15A00D10F42 /* pethealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pethealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8D94B192A9DE15500D10F42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8D94B292A9DE15A00D10F42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8D94B332A9DE15A00D10F42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8D94B132A9DE15500D10F42 = {
+			isa = PBXGroup;
+			children = (
+				C8D94B1E2A9DE15500D10F42 /* pethealth */,
+				C8D94B2F2A9DE15A00D10F42 /* pethealthTests */,
+				C8D94B392A9DE15A00D10F42 /* pethealthUITests */,
+				C8D94B1D2A9DE15500D10F42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8D94B1D2A9DE15500D10F42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8D94B1C2A9DE15500D10F42 /* pethealth.app */,
+				C8D94B2C2A9DE15A00D10F42 /* pethealthTests.xctest */,
+				C8D94B362A9DE15A00D10F42 /* pethealthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8D94B1E2A9DE15500D10F42 /* pethealth */ = {
+			isa = PBXGroup;
+			children = (
+				C8D94B1F2A9DE15500D10F42 /* pethealthApp.swift */,
+				C8D94B212A9DE15500D10F42 /* ContentView.swift */,
+				C8D94B232A9DE15A00D10F42 /* Assets.xcassets */,
+				C8D94B252A9DE15A00D10F42 /* Preview Content */,
+			);
+			path = pethealth;
+			sourceTree = "<group>";
+		};
+		C8D94B252A9DE15A00D10F42 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C8D94B262A9DE15A00D10F42 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C8D94B2F2A9DE15A00D10F42 /* pethealthTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8D94B302A9DE15A00D10F42 /* pethealthTests.swift */,
+			);
+			path = pethealthTests;
+			sourceTree = "<group>";
+		};
+		C8D94B392A9DE15A00D10F42 /* pethealthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8D94B3A2A9DE15A00D10F42 /* pethealthUITests.swift */,
+				C8D94B3C2A9DE15A00D10F42 /* pethealthUITestsLaunchTests.swift */,
+			);
+			path = pethealthUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8D94B1B2A9DE15500D10F42 /* pethealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8D94B402A9DE15A00D10F42 /* Build configuration list for PBXNativeTarget "pethealth" */;
+			buildPhases = (
+				C8D94B182A9DE15500D10F42 /* Sources */,
+				C8D94B192A9DE15500D10F42 /* Frameworks */,
+				C8D94B1A2A9DE15500D10F42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pethealth;
+			productName = pethealth;
+			productReference = C8D94B1C2A9DE15500D10F42 /* pethealth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8D94B2B2A9DE15A00D10F42 /* pethealthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8D94B432A9DE15A00D10F42 /* Build configuration list for PBXNativeTarget "pethealthTests" */;
+			buildPhases = (
+				C8D94B282A9DE15A00D10F42 /* Sources */,
+				C8D94B292A9DE15A00D10F42 /* Frameworks */,
+				C8D94B2A2A9DE15A00D10F42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8D94B2E2A9DE15A00D10F42 /* PBXTargetDependency */,
+			);
+			name = pethealthTests;
+			productName = pethealthTests;
+			productReference = C8D94B2C2A9DE15A00D10F42 /* pethealthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8D94B352A9DE15A00D10F42 /* pethealthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8D94B462A9DE15A00D10F42 /* Build configuration list for PBXNativeTarget "pethealthUITests" */;
+			buildPhases = (
+				C8D94B322A9DE15A00D10F42 /* Sources */,
+				C8D94B332A9DE15A00D10F42 /* Frameworks */,
+				C8D94B342A9DE15A00D10F42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8D94B382A9DE15A00D10F42 /* PBXTargetDependency */,
+			);
+			name = pethealthUITests;
+			productName = pethealthUITests;
+			productReference = C8D94B362A9DE15A00D10F42 /* pethealthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8D94B142A9DE15500D10F42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C8D94B1B2A9DE15500D10F42 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					C8D94B2B2A9DE15A00D10F42 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = C8D94B1B2A9DE15500D10F42;
+					};
+					C8D94B352A9DE15A00D10F42 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = C8D94B1B2A9DE15500D10F42;
+					};
+				};
+			};
+			buildConfigurationList = C8D94B172A9DE15500D10F42 /* Build configuration list for PBXProject "pethealth" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8D94B132A9DE15500D10F42;
+			productRefGroup = C8D94B1D2A9DE15500D10F42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8D94B1B2A9DE15500D10F42 /* pethealth */,
+				C8D94B2B2A9DE15A00D10F42 /* pethealthTests */,
+				C8D94B352A9DE15A00D10F42 /* pethealthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8D94B1A2A9DE15500D10F42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D94B272A9DE15A00D10F42 /* Preview Assets.xcassets in Resources */,
+				C8D94B242A9DE15A00D10F42 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8D94B2A2A9DE15A00D10F42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8D94B342A9DE15A00D10F42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8D94B182A9DE15500D10F42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D94B222A9DE15500D10F42 /* ContentView.swift in Sources */,
+				C8D94B202A9DE15500D10F42 /* pethealthApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8D94B282A9DE15A00D10F42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D94B312A9DE15A00D10F42 /* pethealthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8D94B322A9DE15A00D10F42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D94B3D2A9DE15A00D10F42 /* pethealthUITestsLaunchTests.swift in Sources */,
+				C8D94B3B2A9DE15A00D10F42 /* pethealthUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8D94B2E2A9DE15A00D10F42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8D94B1B2A9DE15500D10F42 /* pethealth */;
+			targetProxy = C8D94B2D2A9DE15A00D10F42 /* PBXContainerItemProxy */;
+		};
+		C8D94B382A9DE15A00D10F42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8D94B1B2A9DE15500D10F42 /* pethealth */;
+			targetProxy = C8D94B372A9DE15A00D10F42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C8D94B3E2A9DE15A00D10F42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8D94B3F2A9DE15A00D10F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8D94B412A9DE15A00D10F42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pethealth/Preview Content\"";
+				DEVELOPMENT_TEAM = UJH28XA776;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gheorghe.pethealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8D94B422A9DE15A00D10F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pethealth/Preview Content\"";
+				DEVELOPMENT_TEAM = UJH28XA776;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gheorghe.pethealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C8D94B442A9DE15A00D10F42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJH28XA776;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gheorghe.pethealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pethealth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pethealth";
+			};
+			name = Debug;
+		};
+		C8D94B452A9DE15A00D10F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJH28XA776;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gheorghe.pethealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pethealth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pethealth";
+			};
+			name = Release;
+		};
+		C8D94B472A9DE15A00D10F42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJH28XA776;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gheorghe.pethealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pethealth;
+			};
+			name = Debug;
+		};
+		C8D94B482A9DE15A00D10F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJH28XA776;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gheorghe.pethealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pethealth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8D94B172A9DE15500D10F42 /* Build configuration list for PBXProject "pethealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D94B3E2A9DE15A00D10F42 /* Debug */,
+				C8D94B3F2A9DE15A00D10F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8D94B402A9DE15A00D10F42 /* Build configuration list for PBXNativeTarget "pethealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D94B412A9DE15A00D10F42 /* Debug */,
+				C8D94B422A9DE15A00D10F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8D94B432A9DE15A00D10F42 /* Build configuration list for PBXNativeTarget "pethealthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D94B442A9DE15A00D10F42 /* Debug */,
+				C8D94B452A9DE15A00D10F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8D94B462A9DE15A00D10F42 /* Build configuration list for PBXNativeTarget "pethealthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D94B472A9DE15A00D10F42 /* Debug */,
+				C8D94B482A9DE15A00D10F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8D94B142A9DE15500D10F42 /* Project object */;
+}
