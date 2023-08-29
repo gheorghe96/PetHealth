@@ -24,6 +24,11 @@
 		C8D94B592A9DE70F00D10F42 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = C8D94B582A9DE70F00D10F42 /* FirebaseRemoteConfig */; };
 		C8D94B5B2A9DE70F00D10F42 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C8D94B5A2A9DE70F00D10F42 /* FirebaseRemoteConfigSwift */; };
 		C8D94B5D2A9DE70F00D10F42 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C8D94B5C2A9DE70F00D10F42 /* FirebaseStorage */; };
+		C8D94B612A9DE8A400D10F42 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B602A9DE8A400D10F42 /* LoginView.swift */; };
+		C8D94B632A9DE8AD00D10F42 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B622A9DE8AD00D10F42 /* RegisterView.swift */; };
+		C8D94B652A9DE8C500D10F42 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B642A9DE8C500D10F42 /* HomeView.swift */; };
+		C8D94B682A9DE8ED00D10F42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B672A9DE8ED00D10F42 /* User.swift */; };
+		C8D94B6B2A9DE91F00D10F42 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B6A2A9DE91F00D10F42 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		C8D94B3A2A9DE15A00D10F42 /* pethealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pethealthUITests.swift; sourceTree = "<group>"; };
 		C8D94B3C2A9DE15A00D10F42 /* pethealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pethealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C8D94B492A9DE6BE00D10F42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C8D94B602A9DE8A400D10F42 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C8D94B622A9DE8AD00D10F42 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		C8D94B642A9DE8C500D10F42 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C8D94B672A9DE8ED00D10F42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C8D94B6A2A9DE91F00D10F42 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,9 @@
 		C8D94B132A9DE15500D10F42 = {
 			isa = PBXGroup;
 			children = (
+				C8D94B692A9DE91400D10F42 /* MVVM */,
+				C8D94B662A9DE8D000D10F42 /* Structs */,
+				C8D94B5E2A9DE88900D10F42 /* Views */,
 				C8D94B1E2A9DE15500D10F42 /* pethealth */,
 				C8D94B2F2A9DE15A00D10F42 /* pethealthTests */,
 				C8D94B392A9DE15A00D10F42 /* pethealthUITests */,
@@ -146,6 +159,40 @@
 				C8D94B3C2A9DE15A00D10F42 /* pethealthUITestsLaunchTests.swift */,
 			);
 			path = pethealthUITests;
+			sourceTree = "<group>";
+		};
+		C8D94B5E2A9DE88900D10F42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C8D94B5F2A9DE89100D10F42 /* AuthViews */,
+				C8D94B642A9DE8C500D10F42 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C8D94B5F2A9DE89100D10F42 /* AuthViews */ = {
+			isa = PBXGroup;
+			children = (
+				C8D94B602A9DE8A400D10F42 /* LoginView.swift */,
+				C8D94B622A9DE8AD00D10F42 /* RegisterView.swift */,
+			);
+			path = AuthViews;
+			sourceTree = "<group>";
+		};
+		C8D94B662A9DE8D000D10F42 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				C8D94B672A9DE8ED00D10F42 /* User.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		C8D94B692A9DE91400D10F42 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				C8D94B6A2A9DE91F00D10F42 /* UserModel.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +340,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D94B612A9DE8A400D10F42 /* LoginView.swift in Sources */,
+				C8D94B632A9DE8AD00D10F42 /* RegisterView.swift in Sources */,
+				C8D94B6B2A9DE91F00D10F42 /* UserModel.swift in Sources */,
+				C8D94B682A9DE8ED00D10F42 /* User.swift in Sources */,
 				C8D94B222A9DE15500D10F42 /* ContentView.swift in Sources */,
+				C8D94B652A9DE8C500D10F42 /* HomeView.swift in Sources */,
 				C8D94B202A9DE15500D10F42 /* pethealthApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
