@@ -11,6 +11,7 @@ import FirebaseFirestoreSwift
 struct Pet: Identifiable, Codable {
     @DocumentID var id: String?
     var category: String
+    var image: String?
     var name: String?
     var breed: String?
     var age: String?
@@ -21,6 +22,7 @@ struct Pet: Identifiable, Codable {
     var dictionary: [String: Any] {
         return [
             "category": category,
+            "image": image ?? "",
             "name": name ?? "",
             "breed": breed ?? "",
             "age": age ?? "",

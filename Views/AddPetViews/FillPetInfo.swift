@@ -6,28 +6,49 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct FillPetInfo: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var petCategory: String
-    @State private var pet: Pet = Pet(category: "Default")
+    @State private var pet: Pet = Pet(category: "Default", name: "Oscar", breed: "Scottish")
     
-    @State private var image: String?
+    @State private var image: UIImage?
+    @State private var selectedItem: PhotosPickerItem? = nil
     
     var body: some View {
         VStack {
-            
-            Image(image ?? petCategory)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .cornerRadius(10)
-                .padding(20)
-                .frame(height: 200)
-            
-            Button("Attach image") {
-                
+            if (image != nil) {
+                Image(uiImage: image!)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(10)
+                    .padding(20)
+                    .frame(height: 200)
+            } else {
+                Image(petCategory)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(10)
+                    .padding(20)
+                    .frame(height: 200)
             }
+            
+            PhotosPicker(
+                selection: $selectedItem,
+                matching: .images,
+                photoLibrary: .shared()) {
+                    Text("Select a photo")
+                }
+                .onChange(of: selectedItem) { newItem in
+                    Task {
+                        // Retrieve selected asset in the form of Data
+                        if let data = try? await newItem?.loadTransferable(type: Data.self) {
+                            image = UIImage(data: data)
+                        }
+                    }
+                }
             
             Form {
                 Section("Pet Info") {
@@ -48,20 +69,30 @@ struct FillPetInfo: View {
             }
         }
         .onAppear {
-            pet = Pet(category: petCategory)
+            pet.category = petCategory
         }
         .navigationTitle(petCategory.capitalizedSentence)
     }
     
     func onSavePress() {
-        PetManager.shared.create(pet: pet) { error in
-            if (error != nil) {
-                print(error!)
-                return
+            StorageManager.shared.upload(image: image) { (url, error) in
+                if (error != nil) {
+                    print(error?.localizedDescription)
+                    return
+                }
+                
+                pet.image = url?.absoluteString ?? ""
+                
+                PetManager.shared.create(pet: pet) { error in
+                    if (error != nil) {
+                        print(error!)
+                        return
+                    }
+
+                    print("New pet added")
+                    self.presentationMode.wrappedValue.dismiss()
+                }
             }
-            
-            print("New pet added")
-            self.presentationMode.wrappedValue.dismiss()
-        }
+
     }
 }

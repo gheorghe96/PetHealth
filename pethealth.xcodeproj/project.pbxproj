@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C83329622A9F5ADA00F2BB15 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83329612A9F5ADA00F2BB15 /* ImageLoader.swift */; };
 		C8D94B202A9DE15500D10F42 /* pethealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B1F2A9DE15500D10F42 /* pethealthApp.swift */; };
 		C8D94B222A9DE15500D10F42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B212A9DE15500D10F42 /* ContentView.swift */; };
 		C8D94B242A9DE15A00D10F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D94B232A9DE15A00D10F42 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		C8D94B782A9E6F4900D10F42 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B772A9E6F4900D10F42 /* Binding.swift */; };
 		C8D94B7B2A9E70ED00D10F42 /* PetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B7A2A9E70ED00D10F42 /* PetManager.swift */; };
 		C8D94B7D2A9F469A00D10F42 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B7C2A9F469A00D10F42 /* String.swift */; };
+		C8D94B802A9F4ED200D10F42 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B7F2A9F4ED200D10F42 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C83329612A9F5ADA00F2BB15 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		C8D94B1C2A9DE15500D10F42 /* pethealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pethealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D94B1F2A9DE15500D10F42 /* pethealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pethealthApp.swift; sourceTree = "<group>"; };
 		C8D94B212A9DE15500D10F42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 		C8D94B772A9E6F4900D10F42 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		C8D94B7A2A9E70ED00D10F42 /* PetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetManager.swift; sourceTree = "<group>"; };
 		C8D94B7C2A9F469A00D10F42 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		C8D94B7F2A9F4ED200D10F42 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +117,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C83329602A9F5ACD00F2BB15 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C83329612A9F5ADA00F2BB15 /* ImageLoader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C8D94B132A9DE15500D10F42 = {
 			isa = PBXGroup;
 			children = (
+				C83329602A9F5ACD00F2BB15 /* Utils */,
+				C8D94B7E2A9F4EC400D10F42 /* Storage */,
 				C8D94B792A9E70DF00D10F42 /* Firestore */,
 				C8D94B752A9E6F1C00D10F42 /* Extensions */,
 				C8D94B692A9DE91400D10F42 /* MVVM */,
@@ -235,6 +249,14 @@
 				C8D94B7A2A9E70ED00D10F42 /* PetManager.swift */,
 			);
 			path = Firestore;
+			sourceTree = "<group>";
+		};
+		C8D94B7E2A9F4EC400D10F42 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				C8D94B7F2A9F4ED200D10F42 /* StorageManager.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,7 +406,9 @@
 			files = (
 				C8D94B612A9DE8A400D10F42 /* LoginView.swift in Sources */,
 				C8D94B7D2A9F469A00D10F42 /* String.swift in Sources */,
+				C83329622A9F5ADA00F2BB15 /* ImageLoader.swift in Sources */,
 				C8D94B632A9DE8AD00D10F42 /* RegisterView.swift in Sources */,
+				C8D94B802A9F4ED200D10F42 /* StorageManager.swift in Sources */,
 				C8D94B722A9DF73100D10F42 /* FillPetInfo.swift in Sources */,
 				C8D94B782A9E6F4900D10F42 /* Binding.swift in Sources */,
 				C8D94B742A9E688200D10F42 /* Pets.swift in Sources */,

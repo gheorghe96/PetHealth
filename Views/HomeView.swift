@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject private var petsManager = PetManager.shared
+    private var storageManager = StorageManager.shared
     
     var body: some View {
         ScrollView {
@@ -48,26 +49,27 @@ struct PetCardView: View {
                     Text(pet.name!)
                         .font(.title3)
                         .bold()
-
                     Spacer()
                 }
-
+                
                 HStack {
                     Text(pet.breed!)
                         .font(.headline)
-
                     Spacer()
                 }
             }
             .padding(.top)
             .padding(.horizontal)
             
-            Image(pet.category)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .cornerRadius(10)
-                .padding()
-                
+            if (Bool(!pet.image!.isEmpty)) {
+                URLImageView(url: URL(string: pet.image ?? "")!)
+            } else {
+                Image(pet.category)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(10)
+                    .padding()
+            }
         }
         .frame(width: 250, height: 250)
         .background(Color.white)
