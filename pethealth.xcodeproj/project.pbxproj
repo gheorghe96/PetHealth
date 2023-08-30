@@ -29,6 +29,12 @@
 		C8D94B652A9DE8C500D10F42 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B642A9DE8C500D10F42 /* HomeView.swift */; };
 		C8D94B682A9DE8ED00D10F42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B672A9DE8ED00D10F42 /* User.swift */; };
 		C8D94B6B2A9DE91F00D10F42 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B6A2A9DE91F00D10F42 /* UserModel.swift */; };
+		C8D94B702A9DF09E00D10F42 /* PetCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B6F2A9DF09E00D10F42 /* PetCategoryView.swift */; };
+		C8D94B722A9DF73100D10F42 /* FillPetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B712A9DF73100D10F42 /* FillPetInfo.swift */; };
+		C8D94B742A9E688200D10F42 /* Pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B732A9E688200D10F42 /* Pets.swift */; };
+		C8D94B782A9E6F4900D10F42 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B772A9E6F4900D10F42 /* Binding.swift */; };
+		C8D94B7B2A9E70ED00D10F42 /* PetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B7A2A9E70ED00D10F42 /* PetManager.swift */; };
+		C8D94B7D2A9F469A00D10F42 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B7C2A9F469A00D10F42 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,12 @@
 		C8D94B642A9DE8C500D10F42 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C8D94B672A9DE8ED00D10F42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C8D94B6A2A9DE91F00D10F42 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C8D94B6F2A9DF09E00D10F42 /* PetCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCategoryView.swift; sourceTree = "<group>"; };
+		C8D94B712A9DF73100D10F42 /* FillPetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillPetInfo.swift; sourceTree = "<group>"; };
+		C8D94B732A9E688200D10F42 /* Pets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pets.swift; sourceTree = "<group>"; };
+		C8D94B772A9E6F4900D10F42 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		C8D94B7A2A9E70ED00D10F42 /* PetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetManager.swift; sourceTree = "<group>"; };
+		C8D94B7C2A9F469A00D10F42 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,8 @@
 		C8D94B132A9DE15500D10F42 = {
 			isa = PBXGroup;
 			children = (
+				C8D94B792A9E70DF00D10F42 /* Firestore */,
+				C8D94B752A9E6F1C00D10F42 /* Extensions */,
 				C8D94B692A9DE91400D10F42 /* MVVM */,
 				C8D94B662A9DE8D000D10F42 /* Structs */,
 				C8D94B5E2A9DE88900D10F42 /* Views */,
@@ -164,6 +178,7 @@
 		C8D94B5E2A9DE88900D10F42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C8D94B6C2A9DEF6300D10F42 /* AddPetViews */,
 				C8D94B5F2A9DE89100D10F42 /* AuthViews */,
 				C8D94B642A9DE8C500D10F42 /* HomeView.swift */,
 			);
@@ -183,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				C8D94B672A9DE8ED00D10F42 /* User.swift */,
+				C8D94B732A9E688200D10F42 /* Pets.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -193,6 +209,32 @@
 				C8D94B6A2A9DE91F00D10F42 /* UserModel.swift */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		C8D94B6C2A9DEF6300D10F42 /* AddPetViews */ = {
+			isa = PBXGroup;
+			children = (
+				C8D94B6F2A9DF09E00D10F42 /* PetCategoryView.swift */,
+				C8D94B712A9DF73100D10F42 /* FillPetInfo.swift */,
+			);
+			path = AddPetViews;
+			sourceTree = "<group>";
+		};
+		C8D94B752A9E6F1C00D10F42 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C8D94B772A9E6F4900D10F42 /* Binding.swift */,
+				C8D94B7C2A9F469A00D10F42 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C8D94B792A9E70DF00D10F42 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				C8D94B7A2A9E70ED00D10F42 /* PetManager.swift */,
+			);
+			path = Firestore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,12 +383,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8D94B612A9DE8A400D10F42 /* LoginView.swift in Sources */,
+				C8D94B7D2A9F469A00D10F42 /* String.swift in Sources */,
 				C8D94B632A9DE8AD00D10F42 /* RegisterView.swift in Sources */,
+				C8D94B722A9DF73100D10F42 /* FillPetInfo.swift in Sources */,
+				C8D94B782A9E6F4900D10F42 /* Binding.swift in Sources */,
+				C8D94B742A9E688200D10F42 /* Pets.swift in Sources */,
+				C8D94B702A9DF09E00D10F42 /* PetCategoryView.swift in Sources */,
 				C8D94B6B2A9DE91F00D10F42 /* UserModel.swift in Sources */,
 				C8D94B682A9DE8ED00D10F42 /* User.swift in Sources */,
 				C8D94B222A9DE15500D10F42 /* ContentView.swift in Sources */,
 				C8D94B652A9DE8C500D10F42 /* HomeView.swift in Sources */,
 				C8D94B202A9DE15500D10F42 /* pethealthApp.swift in Sources */,
+				C8D94B7B2A9E70ED00D10F42 /* PetManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
