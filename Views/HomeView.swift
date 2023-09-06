@@ -11,29 +11,49 @@ struct HomeView: View {
     @ObservedObject private var petsManager = PetManager.shared
     private var storageManager = StorageManager.shared
     
+    private var rssUrls: [String] = [
+        "https://2pawsupinc.com/feed/",
+        "https://www.adogwalksintoabar.com/blog-feed.xml",
+        "https://www.aboundpetsupplies.co/feeds/posts/default?alt=rss",
+        "https://holisticpetwellness.co/feed/",
+        "https://www.petsloo.com/feed/"
+    ]
+    
     var body: some View {
-        ScrollView {
-            HStack {
-                Text("My Pets")
-                    .font(.title2)
-                    .bold()
-                
-                Spacer()
-                
-                NavigationLink(destination: PetCategoryView()) {
-                    Image(systemName: "plus")
-                }
-            }.padding(.horizontal, 35)
-            
-            ScrollView(.horizontal) {
+        VStack {
+            ScrollView {
                 HStack {
-                    ForEach(petsManager.pets) { pet in
-                        PetCardView(pet: pet)
+                    Text("My Pets")
+                        .font(.title2)
+                        .bold()
+                    
+                    Spacer()
+                    
+                    NavigationLink(destination: PetCategoryView()) {
+                        Image(systemName: "plus")
                     }
-                    .padding()
+                }.padding(.horizontal, 35)
+                
+                ScrollView(.horizontal) {
+                    HStack {
+                        ForEach(petsManager.pets) { pet in
+                            PetCardView(pet: pet)
+                        }
+                        .padding()
+                    }
+                }
+                .scrollIndicators(.hidden)
+                
+                
+                ScrollView(.horizontal) {
+                    HStack(alignment: .top) {
+                        ForEach(rssUrls, id: \.hashValue) { url in
+                            RssFeed(rssUrl: URL(string: url)!)
+                                .frame(width: UIScreen.main.bounds.width * 0.9)
+                        }
+                    }
                 }
             }
-            .scrollIndicators(.hidden)
         }
         .navigationTitle("Home")
     }
@@ -72,7 +92,7 @@ struct PetCardView: View {
             }
         }
         .frame(width: 250, height: 250)
-        .background(Color.white)
+        .background(Color(uiColor: .secondarySystemBackground))
         .cornerRadius(10)
         .shadow(radius: 5)
     }

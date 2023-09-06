@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C83329622A9F5ADA00F2BB15 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83329612A9F5ADA00F2BB15 /* ImageLoader.swift */; };
+		C83329642AA4C5EE00F2BB15 /* RssFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83329632AA4C5EE00F2BB15 /* RssFeed.swift */; };
+		C83329672AA4CAF000F2BB15 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = C83329662AA4CAF000F2BB15 /* FeedKit */; };
+		C83329692AA5045600F2BB15 /* RssFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83329682AA5045600F2BB15 /* RssFeedItem.swift */; };
+		C833296B2AA508C400F2BB15 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C833296A2AA508C400F2BB15 /* Date.swift */; };
 		C8D94B202A9DE15500D10F42 /* pethealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B1F2A9DE15500D10F42 /* pethealthApp.swift */; };
 		C8D94B222A9DE15500D10F42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D94B212A9DE15500D10F42 /* ContentView.swift */; };
 		C8D94B242A9DE15A00D10F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D94B232A9DE15A00D10F42 /* Assets.xcassets */; };
@@ -58,6 +62,9 @@
 
 /* Begin PBXFileReference section */
 		C83329612A9F5ADA00F2BB15 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		C83329632AA4C5EE00F2BB15 /* RssFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssFeed.swift; sourceTree = "<group>"; };
+		C83329682AA5045600F2BB15 /* RssFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssFeedItem.swift; sourceTree = "<group>"; };
+		C833296A2AA508C400F2BB15 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		C8D94B1C2A9DE15500D10F42 /* pethealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pethealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D94B1F2A9DE15500D10F42 /* pethealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pethealthApp.swift; sourceTree = "<group>"; };
 		C8D94B212A9DE15500D10F42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8D94B512A9DE70F00D10F42 /* FirebaseDatabaseSwift in Frameworks */,
+				C83329672AA4CAF000F2BB15 /* FeedKit in Frameworks */,
 				C8D94B5B2A9DE70F00D10F42 /* FirebaseRemoteConfigSwift in Frameworks */,
 				C8D94B5D2A9DE70F00D10F42 /* FirebaseStorage in Frameworks */,
 				C8D94B4F2A9DE70F00D10F42 /* FirebaseDatabase in Frameworks */,
@@ -195,6 +203,8 @@
 				C8D94B6C2A9DEF6300D10F42 /* AddPetViews */,
 				C8D94B5F2A9DE89100D10F42 /* AuthViews */,
 				C8D94B642A9DE8C500D10F42 /* HomeView.swift */,
+				C83329632AA4C5EE00F2BB15 /* RssFeed.swift */,
+				C83329682AA5045600F2BB15 /* RssFeedItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -238,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				C8D94B772A9E6F4900D10F42 /* Binding.swift */,
+				C833296A2AA508C400F2BB15 /* Date.swift */,
 				C8D94B7C2A9F469A00D10F42 /* String.swift */,
 			);
 			path = Extensions;
@@ -285,6 +296,7 @@
 				C8D94B582A9DE70F00D10F42 /* FirebaseRemoteConfig */,
 				C8D94B5A2A9DE70F00D10F42 /* FirebaseRemoteConfigSwift */,
 				C8D94B5C2A9DE70F00D10F42 /* FirebaseStorage */,
+				C83329662AA4CAF000F2BB15 /* FeedKit */,
 			);
 			productName = pethealth;
 			productReference = C8D94B1C2A9DE15500D10F42 /* pethealth.app */;
@@ -360,6 +372,7 @@
 			mainGroup = C8D94B132A9DE15500D10F42;
 			packageReferences = (
 				C8D94B4B2A9DE70F00D10F42 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C83329652AA4CAF000F2BB15 /* XCRemoteSwiftPackageReference "FeedKit" */,
 			);
 			productRefGroup = C8D94B1D2A9DE15500D10F42 /* Products */;
 			projectDirPath = "";
@@ -408,7 +421,10 @@
 				C8D94B7D2A9F469A00D10F42 /* String.swift in Sources */,
 				C83329622A9F5ADA00F2BB15 /* ImageLoader.swift in Sources */,
 				C8D94B632A9DE8AD00D10F42 /* RegisterView.swift in Sources */,
+				C83329692AA5045600F2BB15 /* RssFeedItem.swift in Sources */,
+				C83329642AA4C5EE00F2BB15 /* RssFeed.swift in Sources */,
 				C8D94B802A9F4ED200D10F42 /* StorageManager.swift in Sources */,
+				C833296B2AA508C400F2BB15 /* Date.swift in Sources */,
 				C8D94B722A9DF73100D10F42 /* FillPetInfo.swift in Sources */,
 				C8D94B782A9E6F4900D10F42 /* Binding.swift in Sources */,
 				C8D94B742A9E688200D10F42 /* Pets.swift in Sources */,
@@ -745,6 +761,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C83329652AA4CAF000F2BB15 /* XCRemoteSwiftPackageReference "FeedKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nmdias/FeedKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		C8D94B4B2A9DE70F00D10F42 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -756,6 +780,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C83329662AA4CAF000F2BB15 /* FeedKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C83329652AA4CAF000F2BB15 /* XCRemoteSwiftPackageReference "FeedKit" */;
+			productName = FeedKit;
+		};
 		C8D94B4C2A9DE70F00D10F42 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C8D94B4B2A9DE70F00D10F42 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
